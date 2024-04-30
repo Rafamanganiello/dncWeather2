@@ -1,0 +1,267 @@
+body{
+    margin: 0px;
+}
+
+header{
+    margin-top: 0px;
+    width: 100%;
+    height: 82px;
+    background-color: rgba(12, 112, 242, 1);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+header h1{
+    margin-top: 18px;
+    margin-left: 56px;
+    width: 310px;
+    height: 61px;
+    font-family: inter;
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+}
+
+#links{
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.hLinks{
+    margin-left: 15px;
+    margin-right: 15px; 
+    font-family: inter;  
+    color: rgba(255, 255, 255, 1);
+    width: 132px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.hLinks:hover{
+    color: rgba(31, 31, 31, 1);
+    transition: 0.4s;
+}
+#info{
+    margin-left: 300px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    margin-top: 130px;
+    background-color: rgba(186, 186, 186, 1);
+}
+#info h1{
+    font-family: inter;
+    font-size: 35px;
+    color: rgba(31, 31, 31, 1);
+    width: 800;
+    margin-top: 40px;
+}
+#info img{
+    width: 255px;
+    margin-left: 50px;
+}
+#conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(186, 186, 186, 1);
+    margin-bottom: 0px;
+}
+section{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 859px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+
+}
+section input{
+    width: 630px;
+    height: 56px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    background-color: rgba(242, 242, 242, 0.9);
+    padding-left: 20px;
+    border: none;
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(31, 31, 31, 1);
+}
+::placeholder{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(57, 57, 57, 0.8); 
+}
+section label{
+    font-family: inter;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 683px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#entradas{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 130px;
+    margin-left: 110px;
+    margin-bottom: 110px;
+}
+#latLong{
+    display: flex;
+}
+
+#latLong input{
+    width: 296px;
+}
+#lat{
+    margin-left: 0px;
+    margin-right: 14px;
+}
+
+#botao{
+    width: 655px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(12, 112, 242, 0.9);
+    cursor: pointer;
+    box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+    margin-top: 60px;
+    font-family: inter;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+}
+
+#botao:hover{
+opacity: 1.0;
+transition: 0.4s;
+}
+
+#cepHeader{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#cepHeader h1{
+    font-family: inter;
+    font-size: 35px;
+    color: rgba(31, 31, 31, 1);
+    width: 800;
+    margin-right: 30px;
+}
+#cepSection{
+    display: flex;
+    justify-content: space-around;
+    width: 1024px;
+    height: 75px;
+    background-color: rgba(12, 112, 242, 1);
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 50px;
+    margin-bottom: 0;
+}
+#cepSection p{
+    font-family: inter;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+#cepSection2{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 1);
+    width: 1024px;
+    height: 75px;
+    margin-top: 0;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 50px;
+}
+#cepSection2 input{
+    margin-top: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: inter;
+    color: rgba(31, 31, 31, 1);
+}
+
+#previsao{
+    width: 1024px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 10px blue;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    border: none;
+    
+}
+
+#previsaoHeader{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#previsaoHeader h1{
+    font-family: inter;
+    font-size: 35px;
+    color: rgba(31, 31, 31, 1);
+    width: 800;
+    margin-right: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 82px;
+    background-color: rgba(12, 112, 242, 1);
+    margin-top: 0px;
+    display: flex;
+    justify-content: right;
+}
+
+footer a{
+    width: 380px;
+    margin: 0px;
+    margin-left: 15px;
+    margin-right: 33px; 
+    margin-top: 25px;
+    font-family: inter;  
+    color: rgba(255, 255, 255, 1);
+    height: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgba(31, 31, 31, 1);
+    transition: 0.4s;
+}
+
+#cepSection2 input{
+    text-align: center;
+}
+
+#answer{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: inter;
+    color: rgba(31, 31, 31, 1);
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 800;
+
+}

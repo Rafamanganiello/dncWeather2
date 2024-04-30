@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DncWeather</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>DncWeather</h1>
+        <div id="links">
+            <a class="hLinks" href="#cepSection2">Endereços</a>
+            <a class="hLinks" href="#previsao">Previsão do tempo</a>
+        </div>
+    </header>
+    <div id="conteiner">
+        <div id="info">
+            <h1>Descubra mais com precisão: <br> 
+                Previsões do tempo e endereços <br> 
+                em tempo real.</h1>
+            <img src="images/nuvem.svg" alt="">
+        </div>
+        <section id="formulario">
+            <div id="entradas">
+                <label for="">Primeiro Nome:</label>
+                <input type="text" placeholder="Insira seu primeiro nome:" required> 
+                <label for="">E-mail:</label>
+                <input type="text" placeholder="Insira seu e-mail" required>
+                <label for="">Digite seu CEP:</label>
+                <input id="cep" type="number" placeholder="Insira o CEP" required>
+                <label for="">Digite a latitude e longitude para saber a previsão:</label>
+                <div id="latLong">
+                    <input id="lat" type="number" placeholder="Latitude" required>
+                    <input id="long" type="number" placeholder="Longitude" required>
+                </div>
+                <button id="botao" type="button">Acessar</button>
+            </div>
+        </section>
+        <div id="cepHeader">
+            <h1>Resultado da busca por CEP:</h1>
+            <img src="images/cep.svg" alt="">
+        </div>
+        <div id="cepSection">
+            <p>Logradouro/nome</p>
+            <p>Bairro/Distrito</p>
+            <p>Localidade/UF</p>
+        </div>
+        <div id="cepSection2">
+            <input id="rua" placeholder="" readonly>
+            <input id="bairro" placeholder="" readonly>
+            <input id="estado" placeholder="" readonly>
+        </div>
+        <div id="previsaoHeader">
+            <h1>Previsão do tempo na região:</h1>
+            <img src="images/previsao.svg" alt="">
+        </div>
+        <div id="previsao">
+            <div id="answer"></div>
+        </div>
+    </div>
+    <footer>
+        <a target="_blank" href="https://i.pinimg.com/originals/27/d5/1a/27d51a2ec6ee3c0a340584e9ba6d79e7.jpg">Termos de Uso | Política de Privacidade</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
