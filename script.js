@@ -43,22 +43,7 @@ btn.addEventListener("click", () =>{
     getPrevisao();
  })
 
- // lat: -24.73, long: -53.75,
+ 
 
- const express = require('express');
- const httpProxy = require('http-proxy');
- 
- const app = express();
- const proxy = httpProxy.createProxyServer();
- 
- 
- app.use('/api', (req, res) => {
-   proxy.web(req, res, { target: 'https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&hourly=temperature_2m&daily=temperature_2m_max&forecast_days=1' });
- });
- 
- 
- const port = process.env.PORT || 3000;
- app.listen(port, () => {
-   console.log(`Proxy server is running on port ${port}`);
- });
+
  
